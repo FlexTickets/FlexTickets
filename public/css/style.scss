@@ -1,0 +1,219 @@
+// --style expanded --no-cache --update
+
+html,
+body{
+  height: 100%;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+  opacity: 50%;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #212121 !important;
+  }
+}
+
+.navbar.bg-dark{
+  opacity: 0.6;
+}
+
+.navbar-brand{
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+}
+
+#registration{
+  font-size: 1.2rem;
+}
+
+.btn-outline-white#enter{
+  border: 3px solid #ffffff;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  text-transform: none;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.jumbotron{
+  background: url('../img/tickets-intro.jpg') fixed center no-repeat;
+  background-size: cover;
+//  background-color: #212121;
+}
+
+.view{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.card-text{
+  font-size: 1.3rem;
+}
+
+iframe{
+  border-width: 0;
+}
+
+.md-form label{
+  color: white;
+}
+
+.md-form input[type=text]{
+  color: white;
+  font-size: 1.2rem;
+}
+
+.md-form input[type=text]:focus:not([readonly]){
+  color: white;
+  border-bottom: 1px solid white;
+  -webkit-box-shadow: 0 1px 0 0 white;
+}
+
+.md-form input[type=text]:focus:not([readonly])+label{
+  color: white;
+}
+
+.status{
+  color: white;
+}
+
+.grid-divider{
+  overflow-x: hidden; // quickfix to hide divider on left side
+  position: relative;
+}
+
+.grid-divider > [class*="col-"]:nth-child(n + 2):after{
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  @media (max-width: 767px){
+      width: 100%;
+      height: 1px;
+      left: 0;
+      top: -4px; // quickfix to center line between columns
+  }
+  @media (min-width: 768px){
+      width: 1px;
+      height: auto;
+      left: -1px; // quickfix to hide divider on left side
+  }
+}
+
+.download-app .google-play{
+  background-image: url("../img/sprite.svg?rev=6ed6975c3554661dbd50e59bb04a15b4");
+  background-repeat: no-repeat;
+  background-position: 0 45.75030500203335%;
+}
+
+.download-app .apple-store{
+  background-image: url("../img/sprite.svg?rev=6ed6975c3554661dbd50e59bb04a15b4");
+  background-repeat: no-repeat;
+  background-position: 0 6.527043513623424%;
+}
+
+.download-app a{
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+
+  @media (min-width: 768px){
+    width: 145px;
+    height: 66.45833px;
+    background-size: 100% auto;
+  }
+}
+
+.support-ru ul, .support-ua ul, .download-app ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.download-app li{
+  display: inline-block;
+}
+
+.support-ru  li, .support-ua  li{
+  display: flex;
+}
+
+.support-ru li::before, .support-ua li::before{
+  content: '';
+  display: block;
+  margin-right: 10px;
+}
+
+.support-ru span, .support-ua span{
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.common-contacts{
+  display: block;
+  position: relative;
+  height: 30px;
+}
+
+.common-contacts p{
+  display: block;
+  position: relative;
+}
+
+.mobile-phone::before{
+  background-image: url("../img/sprite.svg?rev=6ed6975c3554661dbd50e59bb04a15b4");
+  background-repeat: no-repeat;
+  background-position: 0 44.17940876656473%;
+  width: 30px;
+  height: 30px;
+  background-size: 100% auto;
+}
+
+.email::before{
+  background-image: url("../img/sprite.svg?rev=6ed6975c3554661dbd50e59bb04a15b4");
+  background-repeat: no-repeat;
+  background-position: 0 42.71151885830785%;
+  width: 30px;
+  height: 30px;
+  background-size: 100% auto;
+}
+
+.icon{
+  display: inline-block;
+  background-image: url("../img/sprite.svg?rev=6ed6975c3554661dbd50e59bb04a15b4");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.icon.cell-phone{
+  background-position: 0 44.17940876656473%;
+  width: 30px;
+  height: 30px;
+}
+
+.icon.email{
+  background-position: 0 42.71151885830785%;
+  width: 30px;
+  height: 30px;
+}
